@@ -127,9 +127,9 @@ local function display_music_settings(name)
     end
 
     local volume = math.floor(players[user].settings.gain * 1000)
-    local formspec = "size[5,2]" .. default.gui_bg .. default.gui_bg_img ..
+    local formspec = "size[5,2]" ..
     "textarea[0.3,0.06;2,1;;Volume:;]" ..
-    "scrollbar[0,0.6;4.8,0.25;horizontal;volume;" .. tostring(volume) .. "]" .. 
+    "scrollbar[0,0.6;4.8,0.25;horizontal;volume;" .. tostring(volume) .. "]" ..
     "button[0,1.5;1,0.3;play;Play]" ..
     "button[0.9,1.5;1,0.3;stop;Stop]" ..
     "button_exit[3,1.5;2,0.3;accept;Accept]"
